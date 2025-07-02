@@ -26,7 +26,7 @@
     <img src="logo.png" alt="Logo">
     <div>
       <h1>West Side Auto and Truck Repair Center</h1>
-      <p>From Small Cars to Big Trucks — We Fix It All!</p>
+      <p>From Small Cars to Big Trucks</p>
     </div>
   </header>
 
@@ -36,12 +36,21 @@
     <a href="schedule.html">Schedule</a>
   </nav>
 
-  <section>
-    <h2>About Our Shop</h2>
-    <p>At West Side Auto and Truck Repair Center, we proudly serve Evansville and the surrounding communities with reliable, high-quality automotive and truck repair services. From routine maintenance to advanced diesel diagnostics, our team works hard to get the job done right.</p>
-    <p>We specialize in working on all makes and models, including diesel trucks and commercial fleets. Our services include brake repairs, diagnostics, oil changes, diesel engine work, and general repairs for both cars and trucks.</p>
-    <p>Located at 2309 Harmony Way in Evansville, Indiana, our locally owned shop is known for honest work, fair pricing, and a focus on customer satisfaction. Whether you're a first-time visitor or one of our many repeat customers, we look forward to serving you.</p>
-  </section>
+  <section id="schedule">
+        <h2>Schedule a Repair Service</h2>
+      <p>Fill out this form to request a repair. We'll respond as soon as possible.</p>
+<form action="https://formspree.io/f/xwpbygaa" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="tel" name="phone" placeholder="Phone Number" required />
+    <textarea name="message" placeholder="Describe the issue or service needed..." rows="5" required></textarea>
+
+    <!-- Optional hidden input to redirect user to a thank-you page -->
+    <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" /> -->
+
+    <button type="submit">Request Appointment</button>
+</form>
+    </section>
 
   <footer>
     <p>&copy; 2025 West Side Auto and Truck Repair Center | Evansville, IN</p>
