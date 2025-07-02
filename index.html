@@ -30,13 +30,40 @@
 
         footer { background-color: #111; color: silver; text-align: center; padding: 1em; margin-top: 3em; }
     </style>
+	.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5em;
+}
+
+.header-content img {
+    height: 120px;  /* Increase size */
+    width: auto;
+    margin: 0;
+}
+
+.header-text {
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 </head>
 <body>
     <header>
+    <div class="header-content">
         <img src="logo.png" alt="West Side Auto and Truck Logo">
-        <h1>West Side Auto and Truck Repair Center</h1>
-        <p>From Small Cars to Big Trucks!</p>
-    </header>
+        <div class="header-text">
+            <h1>West Side Auto and Truck Repair Center</h1>
+            <p>From Small Cars to Big Trucks!</p>
+        </div>
+    </div>
+</header>
 
     <nav>
         <a href="#about">About</a>
