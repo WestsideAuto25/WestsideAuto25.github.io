@@ -12,17 +12,6 @@
       margin: 0;
       padding: 2em;
     }
-    nav {
-      background-color: #111;
-      padding: 1em;
-      text-align: center;
-    }
-    nav a {
-      color: silver;
-      margin: 0 1em;
-      text-decoration: none;
-      font-weight: bold;
-    }
     section {
       max-width: 600px;
       margin: 2em auto;
@@ -57,12 +46,6 @@
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="schedule.html">Schedule</a>
-  </nav>
-
   <section id="schedule">
     <h2>Schedule a Repair Service</h2>
     <p>Fill out this form to request a repair. We'll respond as soon as possible.</p>
@@ -71,12 +54,10 @@
       <input type="email" name="email" placeholder="Your Email" required />
       <input type="tel" name="phone" placeholder="Phone Number" required />
       <textarea name="message" placeholder="Describe the issue or service needed..." rows="5" required></textarea>
-
-      <!-- Redirect to thank-you page after submit -->
       <input type="hidden" name="_next" value="thankyou.html" />
-      
       <button type="submit">Request Appointment</button>
     </form>
   </section>
 </body>
 </html>
+
