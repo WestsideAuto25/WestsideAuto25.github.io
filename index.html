@@ -35,7 +35,7 @@
     <header>
         <img src="logo.png" alt="West Side Auto and Truck Logo">
         <h1>West Side Auto and Truck Repair Center</h1>
-        <p>From Small Cars to Big Trucks — We Fix It All!</p>
+        <p>From Small Cars to Big Trucks!</p>
     </header>
 
     <nav>
@@ -69,14 +69,18 @@
 
     <section id="schedule">
         <h2>Schedule a Repair Service</h2>
-        <p>Fill out this form to request a repair. We'll respond as soon as possible.</p>
-        <form action="https://formspree.io/f/xwpbygaa" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="_replyto" placeholder="Your Email" required />
-            <input type="tel" name="phone" placeholder="Phone Number" required />
-            <textarea name="message" placeholder="Describe the issue or service needed..." rows="5" required></textarea>
-            <button type="submit">Request Appointment</button>
-        </form>
+      <p>Fill out this form to request a repair. We'll respond as soon as possible.</p>
+<form action="https://formspree.io/f/xwpbygaa" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <input type="tel" name="phone" placeholder="Phone Number" required />
+    <textarea name="message" placeholder="Describe the issue or service needed..." rows="5" required></textarea>
+
+    <!-- Optional hidden input to redirect user to a thank-you page -->
+    <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html" /> -->
+
+    <button type="submit">Request Appointment</button>
+</form>
     </section>
 
     <footer>
